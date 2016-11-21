@@ -10,7 +10,7 @@ npm run dev
 **3. 生产模式
 npm run prod
 ```
-
+```
 ## 项目目录结构
 bin  开发和生产环境配置
 ---- index.js koa 启动主文件

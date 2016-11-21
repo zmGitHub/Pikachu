@@ -12,6 +12,7 @@ export const makeRooterReducer = asyncReducers =>
     location: locationReducer,
     tags: tagsReducer,
     apps: appsReducer,
+    ...asyncReducers,
   });
 
 // 用于实现异步注入 reducer (代码分割)
