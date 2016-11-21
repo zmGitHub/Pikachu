@@ -1,0 +1,23 @@
+.border-radius{
+  border-radius: 12px;
+  font-weight: normal;
+}
+.search-table{
+  margin-top: 20px;
+  .freeze-text-relative{
+    position: relative;
+    margin-left: 18px;
+  }
+  .freeze-text{
+    position: absolute;
+    background: red;
+    font-size:10px;
+    transform: scale(0.8);
+    color:#ffffff;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,112 @@
+$color: #999999;
+$padding: 10px;
+$radius: 6px;
+.client{
+    height:303px;
+    border-radius: $radius;
+    padding-bottom: 1px;
+    overflow: auto;
+    .client-row{
+      width: auto;
+      margin-top: -20px;
+      .client-col{
+        width: 130px;
+        margin-right: 55px;
+        text-align: center;
+        margin-top: 22px;
+        p:first-child{
+          padding-top: 0;
+          line-height: 14px;
+          text-align: left;
+          margin-bottom: 3px;
+           .client-channel{
+              height: 18px;
+              width: 35px;
+              background: #00b4ff;
+              text-align: center;
+              color: #fff;
+              font-size: 10px;
+              padding: 1px 5px;
+              padding-right: 13px;
+              position: relative;
+              &:before{
+                content: ' ';
+                display: block;
+                border: 8px solid transparent;
+                border-right-color: #fff;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                width: 0;
+                height: 0;
+                z-index: 0;
+              }
+            }
+            .client-channel-no{
+              @extend .client-channel;
+              background: $color;
+            }
+        }
+        img{
+          margin-top: 2px;
+          height: 86px;
+          width: 86px;
+        }
+        p{
+          padding-top: $padding;
+          text-align: center;
+          line-height: 12px;
+          span{
+            color: $color;
+          }
+          .online{
+            color: #00b4ff;
+          }
+          .offline{
+            color: $color;
+          }
+        }
+        .client-detail{
+          color: #2687d0;
+          cursor: pointer;
+        }
+      }
+      .text-center{
+        margin-top: 120px;
+      }
+    }
+  }
+  .detail-modal{
+    width: 692px !important;
+    p{
+      margin-top: 4px;
+      margin-bottom: 20px;
+      line-height: 12px;
+      color: #333;
+    }
+    .log-table{
+      th{
+        color: #666;
+        font-weight: normal;
+        padding: 0;
+      }
+      td{
+        border: none;
+      }
+      tr:nth-child(2n-2){
+        background: rgba(245,245,245,0.50)
+      }
+    }
+    .server-table{
+      @extend .log-table;
+    }
+    hr{
+      border: 0;
+      height: 1px;
+      background: #dfdfdf;
+      margin: 20px 0;
+    }
+    .ant-table-placeholder{
+      border-bottom: none;
+    }
+  }

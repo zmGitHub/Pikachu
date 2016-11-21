@@ -1,0 +1,24 @@
+.notFound {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  background-color: #fdfdfd;
+  >.notFound-content {
+    >.notFound-title {
+      margin-bottom: 30px;
+    }
+    >p {
+      text-align: center;
+      >img {
+        width: 600px;
+      }
+    }
+    >a {
+      border: solid 1px #2db7f5;
+      padding: 5px 15px;
+      border-radius: 20px;
+      margin-top: 30px;
+    }
+    transform: translateY(50%);
+  }
+}

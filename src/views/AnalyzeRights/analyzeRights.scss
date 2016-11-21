@@ -1,0 +1,15 @@
+$color-active: #2db7f5;
+$color: #666666;
+
+.tab-color{
+  .ant-tabs-tab{
+    .dropdown-font{
+      color: $color;
+    }
+  }
+  .ant-tabs-tab-active{
+    .dropdown-font{
+      color: $color-active;
+    }
+  }
+}

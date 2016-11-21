@@ -1,0 +1,36 @@
+$color: rgb(79,125,255);
+.analyze-integral{
+  .title-message{
+    font-size: 14px;
+  }
+  .title-count{
+    font-size: 20px;
+    color: $color;
+  }
+  .integral-table{
+    margin-top: 20px;
+  }
+  > .title-summary{
+    background: rgb(245,252,255);
+    border-bottom: none;
+    >.ant-col-4{
+      p:nth-child(2){
+        margin: 17px auto;
+      }
+      div{
+        span:nth-child(2){
+          position: relative;
+          >.icons{
+            margin-left: 65px;
+             &:before{
+               left: 45px;
+             }
+             &:after{
+               left: 42px;
+             }
+          }
+        }
+      }
+    }
+  }
+}

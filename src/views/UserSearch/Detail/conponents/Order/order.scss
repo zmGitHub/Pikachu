@@ -1,0 +1,22 @@
+$p-color: #999999;
+$name-color: #2687d0;
+
+.order{
+  border-radius: 6px;
+  .order-table{
+    margin-top: 20px;
+    .order-img{
+      width: 80px;
+      height: 80px;
+    }
+    p{
+      color: $p-color;
+      span:first-child{
+        margin-right: 10px;
+      }
+    }
+    .order-name{
+      color: $name-color;
+    }
+  }
+}

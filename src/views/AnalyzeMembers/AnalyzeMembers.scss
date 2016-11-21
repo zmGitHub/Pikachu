@@ -1,0 +1,77 @@
+$analyze-members-warring-color: #ff4d4d !default;
+$analyze-members-summary-color: #f3fcff !default;
+/* 会员分析 */
+.analyze-members {
+  .title-warring {
+    background-color: $analyze-members-warring-color;
+    border-radius: 2px;
+    padding: 3px 13px;
+    font-size: 12px;
+    color: #fff;
+    margin-left: 20px;
+  }
+  .title-message {
+    font-size: 14px;
+  }
+  .title-count {
+    color: #ffa24f;
+    font-size: 18px;
+  }
+  .title-summary {
+    padding: 10px 17px 22px 18px;
+    margin: 20px 0 37px 0;
+    background-color: $analyze-members-summary-color;
+    >.ant-col-4 {
+      text-align: center;
+      border-right: 1px solid #dfdfdf;
+      >p {
+        &:first-child{
+          margin-bottom: 17px;
+        }
+      }
+      >.title-summary-app {
+        >span {
+          position: relative;
+          float: left;
+          width: 50%;
+          &:first-child {
+            color: #ff4d4d;
+          }
+          &:last-child {
+            color: #87c64d;
+          }
+        }
+        &:first-child {
+          margin-bottom: 4px;
+        }
+        &:last-child {
+          font-size: 14px;
+        }
+      }
+      >div {
+        margin-top: 15px;
+        color: #999999;
+        padding: 0 18px;
+        >span {
+          position: relative;
+          &:first-child {
+            float: left;
+          }
+          &:last-child {
+            float: right;
+          }
+        }
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+/* 单应用分析 */
+.analyze-detail {
+  .choice-app {
+    font-size: 14px;
+    margin-bottom: 19px;
+  }
+}

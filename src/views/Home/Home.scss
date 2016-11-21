@@ -1,0 +1,109 @@
+$color: #999999;
+$color-red: #ff4d4d;
+$color-yellow: #fcb372;
+$color-green: #8fca58;
+$color-blue: #4f7dff;
+$color-seven-font: #00b4ff;
+$border-df: 1px solid #dfdfdf;
+.ant-title-row {
+  .title-message{
+    font-family:MicrosoftYaHei;
+    font-size:14px;
+    color:#333333;
+    line-height:12px;
+    text-align:left;
+  }
+}
+  .title-summary{
+    padding: 10px 17px 30px 18px;
+    margin: 20px 0 37px 0;
+    border-bottom: $border-df;
+    >.ant-col-6 {
+      text-align: center;
+      border-right: $border-df;
+      &:last-child{
+        border-right: none;
+      }
+      >p {
+        margin-top: 12px;
+        &:first-child{
+          opacity:0.6;
+          font-family:MicrosoftYaHei;
+          font-size:12px;
+          color:#666666;
+          text-align:center;
+        }
+      }
+      .font-red{
+        font-family:MicrosoftYaHei;
+        font-size:20px;
+        color:$color-red;
+        text-align:center;
+      }
+      .font-yellow{
+        @extend .font-red;
+        color:$color-yellow;
+      }
+      .font-green{
+        @extend .font-red;
+        color:$color-green;
+      }
+      .font-blue{
+        @extend .font-red;
+        color: $color-blue;
+      }
+    }
+    >.ant-col-4{
+      text-align: center;
+      border-right: $border-df;
+      &:last-child{
+        border-right: none;
+      }
+      >p{
+        &:first-child{
+          font-size:12px;
+          color:#666666;
+          letter-spacing:0px;
+          text-align:center;
+        }
+      }
+      .font-seven{
+        color: $color-seven-font;
+        font-size:14px;
+        letter-spacing:0px;
+        line-height:14px;
+        margin-top: 17px;
+      }
+    }
+  }
+.ant-title-row-30{
+    margin-bottom: 30px;
+    >.ant-col-24{
+      &:first-child{
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .ant-title-row-top{
+    @extend .ant-title-row-30;
+    .map-range{
+      padding-top: 40px;
+      >p{
+        margin-bottom: 12px;
+        &:first-child{
+          font-size:12px;
+          color:#666666;
+          text-align:left;
+          margin-bottom: 27px;
+        }
+        &:nth-child(2){
+          color: $color;
+        }
+        span{
+          &:first-child{
+            margin-right: 36px;
+          }
+        }
+      }
+    }
+  }
