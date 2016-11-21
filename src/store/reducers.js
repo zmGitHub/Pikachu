@@ -1,6 +1,4 @@
-import {
-  combineReducers,
-} from 'redux';
+import { combineReducers } from 'redux';
 // 路由
 import locationReducer from './actions/location';
 // 标签列表
@@ -14,7 +12,6 @@ export const makeRooterReducer = asyncReducers =>
     location: locationReducer,
     tags: tagsReducer,
     apps: appsReducer,
-    ...asyncReducers,
   });
 
 // 用于实现异步注入 reducer (代码分割)

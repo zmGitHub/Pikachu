@@ -37,19 +37,15 @@ if (__DEV__ && module.hot) {
   render = () => {
     try {
       renderApp();
-      console.log('render');
     } catch (error) {
-      console.log('error');
       renderError(error);
     }
   };
 
   // 建立热部署
   module.hot.accept('./views/index', () => {
-    console.log('hot');
     setImmediate(() => {
       // 先卸载之前的应用
-      console.log('rerender');
       ReactDOM.unmountComponentAtNode(MOUNT_NODE);
       render();
     });

@@ -1,7 +1,7 @@
 {
   "name": "pikachu",
   "version": "1.0.0",
-  "description": "海尔运营中心管理平台",
+  "description": "寻水的鱼 后台管理系统",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",

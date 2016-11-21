@@ -10,7 +10,7 @@ const Sidebar = props => (
     <div className="ant-layout-sider-backdrop" />
     <div className="ant-layout-logo">
       <IndexLink to="/">
-        <img src={logo} alt="海尔商业价值分析平台-BVS" />
+        <img src={logo} alt="寻水的鱼-turbo" />
       </IndexLink>
       <Icon
         type={props.collapse ? 'menu-unfold' : 'menu-fold'}
